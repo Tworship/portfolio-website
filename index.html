@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimony Omotayo | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #1e1e1e;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 0.5em;
+        }
+
+        header p {
+            font-size: 1.2em;
+            font-weight: 300;
+        }
+
+        nav ul {
+            list-style: none;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #f39c12;
+        }
+
+        #hero {
+            background-image: url('https://via.placeholder.com/1920x600'); /* Replace with your own image */
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            color: white;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #hero h2 {
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+        }
+
+        #about, #portfolio, #contact {
+            padding: 40px 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        #about h2, #portfolio h2, #contact h2 {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .content-section {
+            margin-bottom: 40px;
+        }
+
+        .portfolio-item {
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+
+        .portfolio-item:hover {
+            transform: scale(1.05);
+        }
+
+        .portfolio-item img {
+            max-width: 100px;
+            border-radius: 8px;
+        }
+
+        .portfolio-item .description {
+            flex: 1;
+            margin-left: 20px;
+        }
+
+        .portfolio-item .description h3 {
+            font-size: 1.6em;
+            margin-bottom: 10px;
+        }
+
+        .portfolio-item .description p {
+            font-size: 1.2em;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+
+        .contact-form button {
+            background-color: #f39c12;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 1.2em;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #e67e22;
+        }
+
+        footer {
+            background-color: #1e1e1e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 1.1em;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Testimony Omotayo</h1>
+        <p>Professional Video Editor, Web Developer, and AI Specialist</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <h2>Welcome to My Professional Portfolio</h2>
+        <p>Explore my work and contact me for future collaborations.</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="content-section">
+        <h2>About Me</h2>
+        <p>I'm Testimony Omotayo, a passionate professional with expertise in video editing, web development, and AI solutions. With years of experience and a commitment to delivering high-quality work, I help businesses and individuals create compelling visuals and functional digital experiences.</p>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="content-section">
+        <h2>Portfolio</h2>
+
+        <div class="portfolio-item">
+            <img src="https://via.placeholder.com/100" alt="Project Image">
+            <div class="description">
+                <h3>Project 1</h3>
+                <p>Description of your first project.</p>
+            </div>
+        </div>
+
+        <div class="portfolio-item">
+            <img src="https://via.placeholder.com/100" alt="Project Image">
+            <div class="description">
+                <h3>Project 2</h3>
+                <p>Description of your second project.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="content-section">
+        <h2>Contact Me</h2>
+        <form class="contact-form" action="submit_form.php" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <p>Or reach me directly:</p>
+        <p>Email: <a href="mailto:omotayotestimony5050@gmail.com">omotayotestimony5050@gmail.com</a></p>
+        <p>WhatsApp: <a href="https://wa.me/07081808375">07081808375</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Testimony Omotayo. All rights reserved. | <a href="https://github.com/yourgithub">GitHub</a></p>
+    </footer>
+</body>
+</html>
